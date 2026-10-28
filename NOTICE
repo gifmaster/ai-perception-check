@@ -1,0 +1,5 @@
+Third-party files
+
+src/perceptioncheck/fonts/*.ttf are DejaVu fonts (Bitstream Vera derivative), used for the PDF reports.
+They are distributed under their own licence, in src/perceptioncheck/fonts/LICENSE-DejaVu.txt, not under this
+repository's licence.

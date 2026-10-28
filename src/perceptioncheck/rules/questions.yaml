@@ -1,0 +1,71 @@
+# AI Perception Check: the questionnaire, the thresholds and the four quadrants.
+#
+# The idea: leadership and staff often see AI governance differently, and the gap is where the work is.
+# Every statement is worded so that agreeing is the good answer, and answered on a 1 to 5 scale:
+#   1 strongly disagree, 2 disagree, 3 neither, 4 agree, 5 strongly agree.
+# "Agree" means 4 or 5. The tool compares the SHARE who agree in each group, not just averages,
+# because 1 to 5 answers are ordered categories, not measurements.
+#
+# This is a questionnaire and a calculator, not a legal test. Nothing here comes from a law.
+# Date the wording and thresholds were last reviewed. Update when you review them.
+
+last_reviewed: "2026-10-28"
+
+scale:
+  1: Strongly disagree
+  2: Disagree
+  3: Neither agree nor disagree
+  4: Agree
+  5: Strongly agree
+
+thresholds:
+  min_group: 5        # fewer answers than this in a group for a question: nothing is shown (anonymity)
+  big_gap_pp: 20      # a gap of at least this many percentage points is "big", in either direction
+  staff_low_pct: 50   # staff agreement below this share is "low"
+
+dimensions:
+  awareness: Awareness
+  policy: Policy and rules
+  shadow: Shadow AI
+  training: Skills and training
+  oversight: Oversight
+  trust: Trust and speaking up
+
+questions:
+  - {id: q01, dimension: awareness, text: "I know which AI tools are used in my area of work."}
+  - {id: q02, dimension: awareness, text: "I know who in the organisation is responsible for AI."}
+  - {id: q03, dimension: policy, text: "I know where to find our AI policy and what it asks of me."}
+  - {id: q04, dimension: policy, text: "I know what data I may and may not put into AI tools."}
+  - {id: q05, dimension: shadow, text: "The AI tools people use at work are approved by the organisation."}
+  - {id: q06, dimension: shadow, text: "I can use the AI tools I need without going around the rules."}
+  - {id: q07, dimension: training, text: "I have had enough training to use AI tools safely."}
+  - {id: q08, dimension: training, text: "I know what AI tools get wrong, and I check their output before I rely on it."}
+  - {id: q09, dimension: oversight, text: "A person always checks AI output before it affects a customer, an employee or a decision."}
+  - {id: q10, dimension: oversight, text: "I know what to do and who to tell if an AI tool gives a harmful or wrong result."}
+  - {id: q11, dimension: trust, text: "I trust that our AI tools handle personal and confidential data properly."}
+  - {id: q12, dimension: trust, text: "I can raise concerns about AI without it counting against me."}
+  - {id: q13, dimension: trust, text: "Leadership listens to what staff say about AI."}
+  - {id: q14, dimension: awareness, text: "I am told in advance when AI is used in decisions that affect me."}
+
+# Rows are the size of the gap, columns are how staff answered.
+quadrants:
+  blind_spot:
+    title: Blind spot
+    priority: 1
+    meaning: Big gap, and staff mostly do not agree. Leadership sees this as working, staff do not (or the other way round and staff still disagree).
+    action: Fix first. Find out what staff experience, before changing any rule.
+  watch:
+    title: Different views
+    priority: 2
+    meaning: Big gap, but staff mostly agree. The two groups see it differently, though staff are not unhappy.
+    action: Talk about it. One side may be over- or under-estimating, and a short conversation usually shows which.
+  shared_weakness:
+    title: Shared weakness
+    priority: 3
+    meaning: Small gap, and staff mostly do not agree. Everyone agrees this is weak.
+    action: Plan it. No debate is needed about whether it is a problem.
+  aligned:
+    title: Aligned
+    priority: 4
+    meaning: Small gap, and staff mostly agree.
+    action: Keep it up and check again in six months.

@@ -1,0 +1,23 @@
+# Hand-worked answer key for the development sample (samples/fjordvik_perception.csv).
+# Worked out from the answer counts BEFORE the tool was run. Fictional company, 8 leadership and 40 staff answers.
+# agree = share answering 4 or 5. gap = leadership agree minus staff agree, in percentage points.
+# Rules used: big gap is 20 points or more (either direction), staff low is under 50% agree.
+#
+# Correction after the first run: q07 staff average is (8*1 + 14*2 + 10*3 + 6*4 + 2*5) / 40 = 100 / 40 = 2.5. The key had 2.4,
+# an arithmetic slip copied from q03. The tool was right.
+#   id   lead%  staff%  gap    quadrant          lead avg  staff avg
+questions:
+  q01: {lead: 87.5, staff: 55.0, gap: 32.5,  quadrant: watch,           mean_lead: 4.375, mean_staff: 3.5}
+  q02: {lead: 100.0, staff: 25.0, gap: 75.0, quadrant: blind_spot,      mean_lead: 4.5,   mean_staff: 2.625}
+  q03: {lead: 100.0, staff: 20.0, gap: 80.0, quadrant: blind_spot,      mean_lead: 4.75,  mean_staff: 2.4}
+  q04: {lead: 37.5, staff: 25.0, gap: 12.5,  quadrant: shared_weakness, mean_lead: 3.0,   mean_staff: 2.6}
+  q05: {lead: 75.0, staff: 30.0, gap: 45.0,  quadrant: blind_spot,      mean_lead: 4.125, mean_staff: 2.775}
+  q06: {lead: 75.0, staff: 60.0, gap: 15.0,  quadrant: aligned,         mean_lead: 4.0,   mean_staff: 3.575}
+  q07: {lead: 25.0, staff: 20.0, gap: 5.0,   quadrant: shared_weakness, mean_lead: 2.625, mean_staff: 2.5}
+  q08: {lead: 75.0, staff: 62.5, gap: 12.5,  quadrant: aligned,         mean_lead: 4.0,   mean_staff: 3.675}
+  q09: {lead: 100.0, staff: 55.0, gap: 45.0, quadrant: watch,           mean_lead: 4.75,  mean_staff: 3.5}
+  q10: {lead: 25.0, staff: 20.0, gap: 5.0,   quadrant: shared_weakness, mean_lead: 2.75,  mean_staff: 2.475}
+  q11: {lead: 87.5, staff: 70.0, gap: 17.5,  quadrant: aligned,         mean_lead: 4.25,  mean_staff: 3.825}
+  q12: {lead: 75.0, staff: 57.5, gap: 17.5,  quadrant: aligned,         mean_lead: 4.125, mean_staff: 3.55}
+  q13: {lead: 37.5, staff: 75.0, gap: -37.5, quadrant: watch,           mean_lead: 2.875, mean_staff: 3.9}
+  q14: {lead: 75.0, staff: 60.0, gap: 15.0,  quadrant: aligned,         mean_lead: 4.0,   mean_staff: 3.55}

@@ -1,0 +1,19 @@
+# Hand-worked answer key for the HELD-OUT sample (samples/holdout/kommune_ai_survey.csv).
+# Written before the tool was ever run on that file, and run once. 5 leadership and 20 staff answers.
+# The file is written in a different style from the development sample: semicolons, a BOM, Danish role words
+# and capitalised headers. Two gaps sit exactly on the 20 point threshold, and staff agreement sits exactly on 50%.
+questions:
+  q01: {lead: 100.0, staff: 80.0, gap: 20.0,  quadrant: watch}           # exactly 20 points counts as big
+  q02: {lead: 80.0,  staff: 50.0, gap: 30.0,  quadrant: watch}           # exactly 50% is not low
+  q03: {lead: 60.0,  staff: 25.0, gap: 35.0,  quadrant: blind_spot}
+  q04: {lead: 40.0,  staff: 30.0, gap: 10.0,  quadrant: shared_weakness}
+  q05: {lead: 100.0, staff: 85.0, gap: 15.0,  quadrant: aligned}
+  q06: {lead: 80.0,  staff: 70.0, gap: 10.0,  quadrant: aligned}
+  q07: {lead: 20.0,  staff: 25.0, gap: -5.0,  quadrant: shared_weakness}
+  q08: {lead: 100.0, staff: 20.0, gap: 80.0,  quadrant: blind_spot}
+  q09: {lead: 60.0,  staff: 55.0, gap: 5.0,   quadrant: aligned}
+  q10: {lead: 80.0,  staff: 60.0, gap: 20.0,  quadrant: watch}           # 0.8 - 0.6 in floating point is not exactly 0.2
+  q11: {lead: 40.0,  staff: 80.0, gap: -40.0, quadrant: watch}
+  q12: {lead: 80.0,  staff: 70.0, gap: 10.0,  quadrant: aligned}
+  q13: {lead: 20.0,  staff: 20.0, gap: 0.0,   quadrant: shared_weakness}
+  q14: {lead: 100.0, staff: 55.0, gap: 45.0,  quadrant: watch}
