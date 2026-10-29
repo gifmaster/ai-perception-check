@@ -79,3 +79,7 @@ The [Practical AI Governance Framework](https://github.com/gifmaster/ai-governan
 AGPL-3.0-only. Free to use, also commercially. If you run a modified version as a service, you must publish your changes. A commercial licence without that condition is available on request: alexander@senderovitz.eu. Fonts are under their own licence, see [NOTICE](NOTICE).
 
 Built by [Alexander Senderovitz](https://senderovitz.eu).
+
+## Experimental: run it in the browser (no server)
+
+`python scripts/build_stlite.py` builds a static copy that runs the unchanged app inside the visitor's browser with [stlite](https://github.com/whitphx/stlite). It can be hosted for free on GitHub Pages, never goes to sleep, and uploaded files never leave the visitor's computer. The first load is slower (Python starts in the browser). This is a test next to the normal Streamlit app, not a replacement.
